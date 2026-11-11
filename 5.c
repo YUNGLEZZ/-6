@@ -25,12 +25,12 @@ int main(void) {
                     case 5 :
                     printf("Конвертер данных: выыход\n");
                     break;
+                    default :
+                    printf("Ошибка, введите корректный номер\n");
+                    continue;
+                }
             }
-        }
-        else {
-        printf("Ошибка, введите корректный номер\n");
-        continue;
         }
     }
     return 0;
-}           
+}
