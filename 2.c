@@ -6,7 +6,7 @@ int main(void) {
     wchar_t a, nw, pr;
     pr = getwchar();
     int k = 0;
-    while((a = getwchar()) && a != L'#') {
+    while((a = getwchar()) != WEOF && a != L'#') {
         nw = a;
         if(pr == nw) {
             k++;
